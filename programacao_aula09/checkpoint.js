@@ -4,6 +4,8 @@ let macarrao = 8;
 let carne = 15;
 let feijao = 12;
 let brigadeiro = 8;
+
+
 let padrao = null;
 let menu = null;
 let alterar = null;
@@ -53,5 +55,5 @@ function ligar(alteracao) {
 }
 
 selecionar(pipoca)
-var resultado = ligar(30)
+let resultado = ligar(30)
 console.log(resultado);
