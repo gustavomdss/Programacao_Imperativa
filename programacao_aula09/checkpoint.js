@@ -3,8 +3,6 @@ let macarrao=8
 let carne=15
 let feijao=12
 let brigadeiro=8;
-
-
 let padrao = null;
 
 function menu(tipo){
@@ -26,13 +24,8 @@ function menu(tipo){
             padrao=brigadeiro;
         default:
             padrao = false;
-
+    }   
     }
-    
-    
-    }
-
-
  function alteracaoTempo (tempo){
     alteracaoTempo === 0? alteracaoTempo=padrao : "";
     if (padrao == false){
@@ -50,11 +43,6 @@ function menu(tipo){
      else{
         return('O prato está pronto. Bom Apetite!')
      }
-
- }
- 
- 
-
+}
 menu(carne)
-
 console.log (alteracaoTempo());
