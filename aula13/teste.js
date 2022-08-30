@@ -8,4 +8,4 @@ dados : [{"titular": "Abigael Natte", "numeroConta" : 5486273622, "tipo" : "corr
 {"titular": "Lonnie Verheijden", "numeroConta" : 185979521, "tipo" : "poupanca", "saldo" :25994},
 {"titular": "Alonso Wannan", "numeroConta" : 3151956165, "tipo" : "corrente", "saldo" :7601},
 {"titular": "Bendite Huggett", "numeroConta" : 2138105881, "tipo" : "poupanca", "saldo" :33196},
-],
+]
