@@ -1,13 +1,4 @@
-const conta = {
-    titular : 'fulano',
-    numeroConta : 125566,
-    tipo : 'corrente',
-    saldo : 1500.00,
-
-}
-
-let banco = {
-    dados : [{"titular": "Abigael Natte", "numeroConta" : 5486273622, "tipo" : "corrente", "saldo" : 27771},
+dados : [{"titular": "Abigael Natte", "numeroConta" : 5486273622, "tipo" : "corrente", "saldo" : 27771},
 {"titular": "Ramon Connell", "numeroConta" : 1183971869, "tipo" : "poupanca", "saldo" : 8675},
 {"titular": "Jarret Lafuente", "numeroConta" : 9582019689, "tipo" : "poupanca", "saldo" :27363},
 {"titular": "Ansel Ardley", "numeroConta" : 1761924656, "tipo" : "poupanca", "saldo" :32415},
@@ -18,11 +9,3 @@ let banco = {
 {"titular": "Alonso Wannan", "numeroConta" : 3151956165, "tipo" : "corrente", "saldo" :7601},
 {"titular": "Bendite Huggett", "numeroConta" : 2138105881, "tipo" : "poupanca", "saldo" :33196},
 ],
-
-
-
-
-   
-}
-
-console.log(banco.dados)
