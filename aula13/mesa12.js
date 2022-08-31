@@ -8,10 +8,7 @@ const conta = {
 
 }
 
-const dados = [{"titular": 
-
-
-}]
+const dados = []
 
 function Conta(titular, numeroConta, tipo, saldo){
     this.titular = titular;
