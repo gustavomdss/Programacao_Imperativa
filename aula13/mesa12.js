@@ -1,5 +1,3 @@
-
-
 const conta = {
     titular : 'fulano',
     numeroConta : 125566,
@@ -8,13 +6,11 @@ const conta = {
 
 }
 
-const dados = []
+let clientes = require('./modulos/clientes');
+let funcs = require('./modulos/funcoes')
 
-function Conta(titular, numeroConta, tipo, saldo){
-    this.titular = titular;
-    this.numero = numeroConta;
-    this.tipo = tipo;
-    this.saldo = saldo;
-}
-let conta1 = new Conta(dados[0].titular, 455514, 'corrente', 1500.00)
-console.log(conta1)
+
+console.log(funcs(clientes.titular[0]))
+
+
+
