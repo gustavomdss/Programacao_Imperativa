@@ -7,7 +7,8 @@ const conta = {
 }
 
 let banco = {
-    clientes : [{titular: "Abigael Natte", numeroConta: 5486273622, tipo : "corrente", saldo : 27771},
+    clientes : [
+    {titular: "Abigael Natte", numeroConta: 5486273622, tipo : "corrente", saldo : 27771},
     {titular: "Ramon Connell", numeroConta : 1183971869, tipo : "poupanca", saldo : 8675},
     {titular: "Jarret Lafuente",numeroConta : 9582019689, tipo : "poupanca", saldo :27363},
     {titular: "Ansel Ardley", numeroConta : 1761924656, tipo : "poupanca", saldo :32415},
@@ -21,9 +22,41 @@ let banco = {
 
     consultarCliente : function(nome){
     let resultado = 0;
-    for (let index = 0; index < clientes.length; index++) {
-        const element = array[index];
+    for (let index = 0; index < banco.clientes.length; index++) {
+        
+        if ((nome == banco.clientes[index].titular)){
+            return resultado = banco.clientes[index]
+        }
+       
+    }
+    return resultado;
+   },
+   
+   deposito : function(nome, valor){
+    let resultado = 0
+    for (let index = 0; index < banco.clientes.length; index++) {
+        if (nome == banco.clientes[index].titular){
+            return resultado = "Deposito realizado. Seu novo saldo é: " + (banco.clientes[index].saldo + valor);
+        }
+        
         
     }
+    return resultado;
+   },
+   saque : function(nome, valor){
+    let resultado = 0
+    for (let index = 0; index < banco.clientes.length; index++) {
+         if ((banco.clientes[index].saldo - valor) < 0 ){
+            return resultado = "Fundos Insuficientes!!"
+        }
+        else if(nome == banco.clientes[index].titular){
+            return resultado = "Extração feita com sucesso. Seu novo saldo é: " + (banco.clientes[index].saldo - valor)
+        }
+        
+    }
+    return resultado;
    }
 }
+console.log(banco.consultarCliente("Thomasin Latour"))
+console.log(banco.deposito("Thomasin Latour", 18000))
+console.log(banco.saque("Thomasin Latour", 500))
