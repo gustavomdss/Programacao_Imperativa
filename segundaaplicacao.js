@@ -15,15 +15,15 @@ let Calculos_pessoas = {
     },
 
     media_altura : function (array){
-        let selecao = array.filter(array => (array.sexo === "F"))
+        let selecao = array.filter(array => (array.sexo === "F"));
     
         let somaAltura = 0
         for (let i = 0; i < selecao.length; i++) {
             somaAltura += selecao[i].altura
         }
-        let media = somaAltura / selecao.length
+        let media = somaAltura / selecao.length;
         
-        console.log("A média de altura das mulheres é de: " + media)
+        console.log("A média de altura das mulheres é de: " + media.toFixed(2))
         return "";
     },
 
@@ -36,6 +36,6 @@ let Calculos_pessoas = {
 }
 
 
-console.log(Calculos_pessoas.altura_maior_menor(pessoas_alturas))
-console.log(Calculos_pessoas.media_altura(pessoas_alturas))
-console.log(Calculos_pessoas.num_hom(pessoas_alturas))
+console.log(Calculos_pessoas.altura_maior_menor(pessoas_alturas));
+console.log(Calculos_pessoas.media_altura(pessoas_alturas));
+console.log(Calculos_pessoas.num_hom(pessoas_alturas));
