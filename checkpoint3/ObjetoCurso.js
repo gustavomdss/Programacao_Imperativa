@@ -20,7 +20,7 @@ const curso = {
            let media = somaNota / array.notas.length
            if ((media >= curso.notaAprovacao) && ((array.faltas < this.faltas_maximas))){
             return "Aluno Aprovado"
-           }else if( (media >= curso.notaAprovacao) && ((array.faltas == this.faltas_maximas) && (media > (curso.notaAprovacao + (curso.notaAprovacao * 0,01))))) {
+           }else if( (media >= curso.notaAprovacao) && ((array.faltas == this.faltas_maximas) && (media > (curso.notaAprovacao + (curso.notaAprovacao * 0,1))))) {
             return "Aluno Aprovado"
            }else{
             return "Aluno Reprovado"
