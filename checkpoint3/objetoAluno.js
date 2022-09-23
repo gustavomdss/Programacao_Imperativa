@@ -22,13 +22,25 @@ let aluno = {
     },
 
     faltas : function(array){
-        return " O(A) Aluno(a) " + array.nome + " Tem Agora: " + (array.faltas += 1) + " Falta(s)"
+        return " O(A) Aluno(a) " + array.nome + " Tem Agora: " + (array.faltas + 1) + " Falta(s)"
         
     }
 
 }
 module.exports = aluno.alunos
 
+
+// ---- Adicionando aluno pela funcao construtora
+aluno.alunos.push(new construcao("Eduardo", 2, [5,8,8,4,3,10]))
+
+// ----- Mostrando o nome de um aluno;
 console.log(aluno.alunos[0].nome)
+
+//-------Calcular media de um aluno:
 console.log(aluno.calcularMedia(aluno.alunos[2]))
+
+//-------Acrescentar falta a um aluno:
 console.log(aluno.faltas(aluno.alunos[3]))
+
+//-------Mostrar Lista de Alunos atualizada:
+console.log(aluno.alunos)
