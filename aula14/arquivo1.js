@@ -14,3 +14,10 @@ function mediaIdade(lista){
     return result / lista.length;
 }
 console.log(mediaIdade(listPessoas));
+console.log(funcSoma(2,4))
+
+let teste = {
+    somar : funcSoma(10,5),
+    
+}
+console.log(teste.somar)
